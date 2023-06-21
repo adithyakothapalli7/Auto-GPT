@@ -7,6 +7,8 @@ services:
     build:
       dockerfile: .devcontainer/Dockerfile
       context: ../
+      shm_size: 1gb
     tty: true
     volumes:
       - ../:/workspace/Auto-GPT
+    shm_size: 1gb
